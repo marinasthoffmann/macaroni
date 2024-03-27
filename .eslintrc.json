@@ -18,6 +18,7 @@
         "react"
     ],
     "rules": {
+        "no-mixed-spaces-and-tabs": 0,
         "react/react-in-jsx-scope": "off",
         "indent": [
             "error",
