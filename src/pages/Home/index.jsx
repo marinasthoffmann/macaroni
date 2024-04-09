@@ -1,6 +1,7 @@
 import menu from "data/menu.json";
-import styles from './Home.module.scss'
+import styles from './Home.module.scss';
 import stylesTheme from 'styles/Theme.module.scss';
+import ourHouse from 'assets/our_house.png';
 
 export default function Home() {
     
@@ -21,6 +22,13 @@ export default function Home() {
                         </button>
                     </div>
                 ))}
+            </div>
+            <h3 className={stylesTheme.title}>Our house</h3>
+            <div className={styles.ourHouse}>
+                    <img src={ourHouse} alt="House of Macaroni"/>
+                    <div className={styles.ourHouse__adress}>
+                        Grossacker 6 <br/><br/> Niederuzwil - SG
+                    </div>
             </div>
         </section>
     );
