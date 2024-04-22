@@ -3,6 +3,7 @@ import menu from 'data/menu.json';
 import Item from './Item';
 import styles from './Items.module.scss';
 import { useState, useEffect } from 'react';
+import { Menu } from 'types/Dish';
 
 interface Props {
   search: string,
@@ -24,7 +25,7 @@ export default function Items(props: Props) {
 		return true;
 	}
 
-	function ordenate(newList: typeof menu) {
+	function ordenate(newList: Menu) {
 		switch(ordenator) {
 		case 'portion': 
 			return newList.sort((a, b) => a.size > b.size ? 1 : -1);
